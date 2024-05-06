@@ -7,14 +7,16 @@ using UnityEngine.UI;
 
 public class WinManager : MonoBehaviour
 {
-    private bool winned = false;
+    public bool winned = false;
     Animator animator;
     public TextMeshPro timeText;
     public Button backButton;
     Player player;
+    AudioManager audioManager;
     
     void Start()
     {
+        audioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
         player = GameObject.Find("Player").GetComponent<Player>();
         animator = Camera.main.GetComponent<Animator>();
     }
@@ -32,12 +34,11 @@ public class WinManager : MonoBehaviour
 
             backButton.interactable = true;
             backButton.GetComponentInChildren<TextMeshProUGUI>().alpha = 255f;
-            print("win");
+            Destroy(audioManager.gameObject);
         }
     }
     public void MainMenu()
     {
-        Destroy(GameObject.Find("AudioManager"));
         SceneManager.LoadScene("Main Menu");
     }
 }
