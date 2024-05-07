@@ -15,6 +15,7 @@ Earth Savers is an interactive and educational game where players take on the ro
 - **Download:** Download for windows or Play it online at [Earth Savers](https://majedev.itch.io/).
 
 ## Gameplay
-- **Demo:** (Include a GIF or video demonstration of gameplay)
+![Earth Savers gif](https://github.com/Majed-Dev/Earth-Savers/assets/148640821/2ca5aa32-76f1-48c5-baf5-72f0298809b1)
+
 
 
